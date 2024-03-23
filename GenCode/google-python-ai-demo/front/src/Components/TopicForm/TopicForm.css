@@ -1,0 +1,79 @@
+.chat-wrapper {
+    background: transparent;
+    border: 2px solid #00000033;
+    border-color: rgb(182, 173, 173);
+    box-shadow: 0 0 30px rgba(0,0,0, .2);
+    color: black;
+    backdrop-filter: blur(1px);
+    border-radius:10px ;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%; /* Set width to 80% */
+    padding: 15px; /* Adjust transparency */
+    border-top: 1px solid #ccc; /* Optional: Add a border for separation */
+    /* Apply border radius for smooth edges */
+}
+
+
+.chat-input {
+    flex: 1;
+}
+
+.chat-input input {
+    width: 100%; /* Set input width to 100% */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.generate-button {
+    margin-left: 10px; /* Adjust margin */
+}
+
+.generate-button button {
+    width: 100px; /* Adjust width */
+    height: 36px; /* Adjust height */
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+body {
+    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.api-data {
+    color: rgb(0, 0, 0); /* Set text color to black */
+    background-color: antiquewhite; /* Set background color */
+    width: 90%; /* Set width of the box */
+    padding: 30px; /* Add padding for spacing */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    margin: 0 auto; /* Center the box horizontally */
+    overflow-y: auto; /* Enable vertical scrolling when needed */
+    max-height: calc(100vh - 10px); /* Limit height to prevent page shaking */
+    margin-bottom: 75px; /* Add margin bottom to prevent content overlap with the footer */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    border: 5px solid rgb(100, 61, 61);
+}
+
+.box-with-text {
+    display: inline-block; /* Make the box auto-size with the text */
+    text-align: center; /* Center the text */
+    background-color: black; /* Set background color */
+    color: white; /* Set text color */
+    padding: 5px; /* Add padding */
+    border: 1px solid white; /* Add border */
+    border-radius: 5px; /* Add border radius */
+}
